@@ -18,7 +18,7 @@ class Dashboard:
             "CLB": False,
             "CloudFront": False,
             "EC2": False,
-            "ElasticCache": False,
+            "ElastiCache": False,
             "NLB": False,
             "RDS": False,
             "NAT": False,
@@ -48,8 +48,8 @@ class Dashboard:
                     self.resources.append(resources.Cloudfront(self.input_file))
                 elif key == "EC2":
                     self.resources.append(resources.Ec2(self.input_file))
-                elif key == "ElasticCache":
-                    self.resources.append(resources.ElasticCache(self.input_file))
+                elif key == "ElastiCache":
+                    self.resources.append(resources.ElastiCache(self.input_file))
                 elif key == "NLB":
                     self.resources.append(resources.Nlb(self.input_file))
                 elif key == "RDS":

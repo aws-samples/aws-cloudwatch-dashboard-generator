@@ -12,8 +12,8 @@ from input_check import check_input_yaml_format
 CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
 
 @click.command(context_settings=CONTEXT_SETTINGS)
-@click.option("-f", "--input_file", required=True, type=click.File('r'), help="Input YAML file")
-@click.option("-o", "--output-file", required=True, type=click.File('w'), help="Output Dashboard JSON file")
+@click.option("-f", "--input_file", required=True, type=click.File('r'), help="Input resource .csv file")
+@click.option("-o", "--output-file", required=True, type=click.File('w'), help="Output Amazon CloudWatch dashboard JSON file")
 def main(input_file: TextIOWrapper, output_file: TextIOWrapper):
     """
     IEMCWD is a tool to generate an IEM CloudWatch Dashboard based on resources you provide.

@@ -10,7 +10,7 @@ ALB_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "ALB.json"
 CLB_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "CLB.json"
 CF_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "CloudFront.json"
 EC2_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "EC2.json"
-ELASCACHE_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "ElasticCache.json"
+ELASCACHE_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "ElastiCache.json"
 NLB_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "NLB.json"
 RDS_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "RDS.json"
 AURORA_CLUSTER_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "AuroraCluster.json"
@@ -67,7 +67,7 @@ class Ec2(Resource):
         return self.template
 
 
-class ElasticCache(Resource):
+class ElastiCache(Resource):
     def __init__(self, input_file: dict):
         super().__init__(input_file)
         self.is_elastic_cache = True

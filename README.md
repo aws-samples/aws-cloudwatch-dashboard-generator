@@ -72,7 +72,7 @@ Options:
 
 ## Usage
 
-The tool is quite simple. It reads a CSV or YAML file to get your resource IDs, then output the dashboard JSON to the directory you specified. Below are usages of using the two file types as the input respectively. Choose the one you prefer. Using a CSV file as the input is more simple, so this method is recommended.
+The tool is quite simple. It reads a CSV file to get your resource IDs, then output the dashboard JSON to the directory you specified.
 
 ### Using CSV file as an input
 
@@ -100,7 +100,7 @@ You may create a CSV file matching the columns and format above, or fill in `inp
 
 Example:
 ```bash
-$ python iemcwd.py -f inputs/csv/example.csv -o outputs/example_output.json
+python3 iemcwd.py -f inputs/csv/example.csv -o outputs/example_output.json
 
 Successfully generated CloudWatch dashBoard JSON file.
 ```
@@ -121,7 +121,7 @@ You may also follow the below documentation to create the CloudWatch dashboard u
 - CLB
 - CloudFront
 - EC2
-- ElasticCache
+- ElastiCache
 - NLB
 - RDS
 - NAT

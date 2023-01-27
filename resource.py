@@ -138,6 +138,6 @@ class Resource(ABC):
                 metric_attr[2],  # DimensionName1
                 resource["CacheClusterId"],  # DimensionValue1
                 metric_attr[4],  # DimensionName2
-                resource["CacheNodeId"],  # DimensionValue2
+                resource["CacheNodeId"][0],  # DimensionValue2
                 {"region": region},
             ]
