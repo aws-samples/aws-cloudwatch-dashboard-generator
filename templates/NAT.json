@@ -1,0 +1,210 @@
+[
+    {
+        "height": 2,
+        "width": 18,
+        "y": 1100,
+        "x": 0,
+        "type": "text",
+        "properties": {
+            "markdown": "\n# NAT Gateway\n"
+        }
+    },
+    {
+        "height": 6,
+        "width": 9,
+        "y": 1108,
+        "x": 0,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/NATGateway",
+                    "PacketsInFromSource",
+                    "NatGatewayId",
+                    "nat-123456789911122f"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "stat": "Sum",
+            "period": 60
+        }
+    },
+    {
+        "height": 6,
+        "width": 9,
+        "y": 1108,
+        "x": 9,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/NATGateway",
+                    "PacketsInFromDestination",
+                    "NatGatewayId",
+                    "nat-1234567899111222f"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "stat": "Sum",
+            "period": 60
+        }
+    },
+    {
+        "height": 6,
+        "width": 9,
+        "y": 1114,
+        "x": 0,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/NATGateway",
+                    "ConnectionAttemptCount",
+                    "NatGatewayId",
+                    "nat-1234567899111222f"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "period": 60,
+            "stat": "Sum"
+        }
+    },
+    {
+        "height": 6,
+        "width": 9,
+        "y": 1114,
+        "x": 9,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/NATGateway",
+                    "ConnectionEstablishedCount",
+                    "NatGatewayId",
+                    "nat-1234567899111222f"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "period": 60,
+            "stat": "Sum"
+        }
+    },
+    {
+        "height": 6,
+        "width": 9,
+        "y": 1120,
+        "x": 9,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/NATGateway",
+                    "ErrorPortAllocation",
+                    "NatGatewayId",
+                    "nat-1234567899111222f"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "period": 60,
+            "stat": "Sum"
+        }
+    },
+    {
+        "height": 6,
+        "width": 9,
+        "y": 1126,
+        "x": 0,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/NATGateway",
+                    "PacketsDropCount",
+                    "NatGatewayId",
+                    "nat-1234567899111222f"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "period": 60,
+            "stat": "Sum"
+        }
+    },
+    {
+        "height": 6,
+        "width": 9,
+        "y": 1120,
+        "x": 0,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/NATGateway",
+                    "ActiveConnectionCount",
+                    "NatGatewayId",
+                    "nat-1234567899111222f"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "period": 60,
+            "stat": "Maximum"
+        }
+    },
+    {
+        "height": 6,
+        "width": 9,
+        "y": 1102,
+        "x": 0,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/NATGateway",
+                    "BytesInFromSource",
+                    "NatGatewayId",
+                    "nnat-1234567899111222f"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "stat": "Sum",
+            "period": 60
+        }
+    },
+    {
+        "height": 6,
+        "width": 9,
+        "y": 1102,
+        "x": 9,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/NATGateway",
+                    "BytesInFromDestination",
+                    "NatGatewayId",
+                    "nat-1234567899111222f"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "stat": "Sum",
+            "period": 60
+        }
+    }
+]

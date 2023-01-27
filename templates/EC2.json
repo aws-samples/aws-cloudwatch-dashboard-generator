@@ -1,0 +1,148 @@
+[
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 2,
+            "width": 9,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2", "StatusCheckFailed_Instance", "InstanceId", "i-01222b81123345644" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "period": 300,
+                "stat": "Sum"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 9,
+            "y": 14,
+            "width": 9,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2", "CPUSurplusCreditBalance", "InstanceId", "i-01222b81123345644" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "period": 300,
+                "stat": "Maximum"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 9,
+            "y": 20,
+            "width": 9,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2", "NetworkOut", "InstanceId", "i-01222b81123345644" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "period": 300,
+                "stat": "Sum"
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 0,
+            "width": 18,
+            "height": 2,
+            "properties": {
+                "markdown": "\n# EC2\n"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 9,
+            "y": 2,
+            "width": 9,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2", "StatusCheckFailed_System", "InstanceId", "i-0514ac12345678" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-1",
+                "stat": "Sum",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 8,
+            "width": 9,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2", "CPUUtilization", "InstanceId", "i-0f112345678555" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-1",
+                "stat": "Maximum",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 9,
+            "y": 8,
+            "width": 9,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2", "CPUCreditUsage", "InstanceId", "i-01222b81123345644" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "period": 300,
+                "stat": "Maximum"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 14,
+            "width": 9,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2", "CPUCreditBalance", "InstanceId", "i-01222b81123345644" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "period": 300,
+                "stat": "Minimum"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 20,
+            "width": 9,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2", "NetworkIn", "InstanceId", "i-01222b81123345644" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "period": 300,
+                "stat": "Sum"
+            }
+        }
+]

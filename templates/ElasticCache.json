@@ -1,0 +1,468 @@
+[
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 102,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/ElastiCache",
+                    "CPUUtilization",
+                    "CacheClusterId",
+                    "testcache-001",
+                    "CacheNodeId",
+                    "0001"
+                ],
+                [
+                    "...",
+                    "testcache-002",
+                    ".",
+                    "."
+                ],
+                [
+                    "...",
+                    "testcache-003",
+                    ".",
+                    "."
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 300,
+            "stat": "Maximum"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 12,
+        "y": 102,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/ElastiCache",
+                    "EngineCPUUtilization",
+                    "CacheClusterId",
+                    "testcache-001",
+                    "CacheNodeId",
+                    "0001"
+                ],
+                [
+                    "...",
+                    "testcache-002",
+                    ".",
+                    "."
+                ],
+                [
+                    "...",
+                    "testcache-003",
+                    ".",
+                    "."
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 300,
+            "stat": "Maximum"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 6,
+        "y": 102,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/ElastiCache",
+                    "CPUCreditBalance",
+                    "CacheClusterId",
+                    "testcache-001",
+                    "CacheNodeId",
+                    "0001"
+                ],
+                [
+                    "...",
+                    "testcache-002",
+                    ".",
+                    "."
+                ],
+                [
+                    "...",
+                    "testcache-003",
+                    ".",
+                    "."
+                ]
+            ],
+            "region": "us-east-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 108,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/ElastiCache",
+                    "SwapUsage",
+                    "CacheClusterId",
+                    "testcache-001",
+                    "CacheNodeId",
+                    "0001"
+                ],
+                [
+                    "...",
+                    "testcache-002",
+                    ".",
+                    "."
+                ],
+                [
+                    "...",
+                    "testcache-003",
+                    ".",
+                    "."
+                ]
+            ],
+            "region": "us-east-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 6,
+        "y": 108,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/ElastiCache",
+                    "FreeableMemory",
+                    "CacheClusterId",
+                    "testcache-001"
+                ],
+                [
+                    "...",
+                    "testcache-002"
+                ],
+                [
+                    "...",
+                    "testcache-003"
+                ]
+            ],
+            "region": "us-east-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 12,
+        "y": 108,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/ElastiCache",
+                    "NetworkBytesIn",
+                    "CacheClusterId",
+                    "testcache-001",
+                    "CacheNodeId",
+                    "0001"
+                ],
+                [
+                    "...",
+                    "testcache-002",
+                    ".",
+                    "."
+                ],
+                [
+                    "...",
+                    "testcache-003",
+                    ".",
+                    "."
+                ]
+            ],
+            "region": "us-east-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 114,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/ElastiCache",
+                    "NetworkBytesOut",
+                    "CacheClusterId",
+                    "testcache-001"
+                ],
+                [
+                    "...",
+                    "testcache-002"
+                ],
+                [
+                    "...",
+                    "testcache-003"
+                ]
+            ],
+            "region": "us-east-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 6,
+        "y": 114,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/ElastiCache",
+                    "NetworkPacketsIn",
+                    "CacheClusterId",
+                    "testcache-001",
+                    "CacheNodeId",
+                    "0001"
+                ],
+                [
+                    "...",
+                    "testcache-002",
+                    ".",
+                    "."
+                ],
+                [
+                    "...",
+                    "testcache-003",
+                    ".",
+                    "."
+                ]
+            ],
+            "region": "us-east-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 12,
+        "y": 114,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/ElastiCache",
+                    "NetworkPacketsOut",
+                    "CacheClusterId",
+                    "testcache-001",
+                    "CacheNodeId",
+                    "0001"
+                ],
+                [
+                    "...",
+                    "testcache-002",
+                    ".",
+                    "."
+                ],
+                [
+                    "...",
+                    "testcache-003",
+                    ".",
+                    "."
+                ]
+            ],
+            "region": "us-east-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 120,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/ElastiCache",
+                    "CurrConnections",
+                    "CacheClusterId",
+                    "testcache-001"
+                ],
+                [
+                    "...",
+                    "testcache-002"
+                ],
+                [
+                    "...",
+                    "testcache-003"
+                ]
+            ],
+            "region": "us-east-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 6,
+        "y": 120,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/ElastiCache",
+                    "NewConnections",
+                    "CacheClusterId",
+                    "testcache-001",
+                    "CacheNodeId",
+                    "0001"
+                ],
+                [
+                    "...",
+                    "testcache-002",
+                    ".",
+                    "."
+                ],
+                [
+                    "...",
+                    "testcache-003",
+                    ".",
+                    "."
+                ]
+            ],
+            "region": "us-east-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 12,
+        "y": 120,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/ElastiCache",
+                    "IsMaster",
+                    "CacheClusterId",
+                    "testcache-001",
+                    "CacheNodeId",
+                    "0001"
+                ],
+                [
+                    "...",
+                    "testcache-002",
+                    ".",
+                    "."
+                ],
+                [
+                    "...",
+                    "testcache-003",
+                    ".",
+                    "."
+                ]
+            ],
+            "region": "us-east-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 126,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/ElastiCache",
+                    "ReplicationLag",
+                    "CacheClusterId",
+                    "testcache-001"
+                ],
+                [
+                    "...",
+                    "testcache-002"
+                ],
+                [
+                    "...",
+                    "testcache-003"
+                ]
+            ],
+            "region": "us-east-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 6,
+        "y": 126,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/ElastiCache",
+                    "ReplicationBytes",
+                    "CacheClusterId",
+                    "testcache-001",
+                    "CacheNodeId",
+                    "0001"
+                ],
+                [
+                    "...",
+                    "testcache-002",
+                    ".",
+                    "."
+                ],
+                [
+                    "...",
+                    "testcache-003",
+                    ".",
+                    "."
+                ]
+            ],
+            "region": "us-east-1"
+        }
+    },
+    {
+        "type": "text",
+        "x": 0,
+        "y": 100,
+        "width": 18,
+        "height": 2,
+        "properties": {
+            "markdown": "\n# ElasticCache\n"
+        }
+    }
+]

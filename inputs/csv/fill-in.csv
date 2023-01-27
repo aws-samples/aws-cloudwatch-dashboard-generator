@@ -1,0 +1,10 @@
+service,region_code,dim1_name,dim1_value,dim2_name,dim2_value
+ALB,,,
+CLB,,,
+NLB,,,
+NAT,,,,,
+CloudFront,,,
+EC2,,,
+RDS,,,
+ElastiCache,,,,,
+AuroraCluster,,,

@@ -1,0 +1,100 @@
+[
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 52,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/EBS",
+                    "VolumeWriteBytes",
+                    "VolumeId",
+                    "vol-33222233123456877"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 300,
+            "stat": "Sum"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 52,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/EBS",
+                    "VolumeReadBytes",
+                    "VolumeId",
+                    "vol-33222233123456877"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 300,
+            "stat": "Sum"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 58,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/EBS",
+                    "VolumeWriteOps",
+                    "VolumeId",
+                    "vol-01224553631111"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 300,
+            "stat": "Sum"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 58,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/EBS",
+                    "VolumeReadOps",
+                    "VolumeId",
+                    "vol-33222233123456877"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 300,
+            "stat": "Sum"
+        }
+    },
+    {
+        "type": "text",
+        "x": 0,
+        "y": 50,
+        "width": 18,
+        "height": 2,
+        "properties": {
+            "markdown": "\n# EBS\n"
+        }
+    }
+]

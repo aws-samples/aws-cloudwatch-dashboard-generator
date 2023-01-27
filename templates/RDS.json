@@ -1,0 +1,264 @@
+[
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 302,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "stat": "Maximum",
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "CPUUtilization",
+                    "DBInstanceIdentifier",
+                    "my57"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 6,
+        "y": 302,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "FreeableMemory",
+                    "DBInstanceIdentifier",
+                    "my57"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 12,
+        "y": 302,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "FreeStorageSpace",
+                    "DBInstanceIdentifier",
+                    "my57"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-southeast-2",
+            "stat": "Average",
+            "period": 300
+        }
+    },
+    {
+        "type": "metric",
+        "x": 18,
+        "y": 302,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "stat": "Maximum",
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "ReadIOPS",
+                    "DBInstanceIdentifier",
+                    "my57"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 308,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "stat": "Maximum",
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "ReadLatency",
+                    "DBInstanceIdentifier",
+                    "my57"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 6,
+        "y": 308,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "stat": "Maximum",
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "ReadThroughput",
+                    "DBInstanceIdentifier",
+                    "my57"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 12,
+        "y": 308,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "stat": "Maximum",
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "WriteIOPS",
+                    "DBInstanceIdentifier",
+                    "my57"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 18,
+        "y": 308,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "stat": "Maximum",
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "WriteLatency",
+                    "DBInstanceIdentifier",
+                    "my57"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 314,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "stat": "Maximum",
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "WriteThroughput",
+                    "DBInstanceIdentifier",
+                    "my57"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 6,
+        "y": 314,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "stat": "Maximum",
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "DiskQueueDepth",
+                    "DBInstanceIdentifier",
+                    "my57"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 12,
+        "y": 314,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "stat": "Maximum",
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "DatabaseConnections",
+                    "DBInstanceIdentifier",
+                    "my57"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 18,
+        "y": 314,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "stat": "Maximum",
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "SwapUsage",
+                    "DBInstanceIdentifier",
+                    "my57"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "text",
+        "x": 0,
+        "y": 300,
+        "width": 24,
+        "height": 2,
+        "properties": {
+            "markdown": "\n# RDS\n"
+        }
+    }
+]

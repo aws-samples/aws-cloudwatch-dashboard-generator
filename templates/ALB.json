@@ -1,0 +1,214 @@
+[
+    {
+        "type": "text",
+        "x": 0,
+        "y": 800,
+        "width": 18,
+        "height": 2,
+        "properties": {
+            "markdown": "\n# Application Load Balancer\n"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 808,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/ApplicationELB",
+                    "HTTPCode_ELB_5XX_Count",
+                    "LoadBalancer",
+                    "app/testALB/12346566"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "period": 60,
+            "stat": "Sum"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 802,
+        "width": 18,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/ApplicationELB",
+                    "RequestCount",
+                    "LoadBalancer",
+                    "app/testALB/12346566"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "stat": "Sum",
+            "period": 60
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 826,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/ApplicationELB",
+                    "TargetResponseTime",
+                    "LoadBalancer",
+                    "app/testALB/12346566"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "stat": "Average",
+            "period": 60
+        }
+    },
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 826,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "stat": "Sum",
+            "period": 60,
+            "metrics": [
+                [
+                    "AWS/ApplicationELB",
+                    "ClientTLSNegotiationErrorCount",
+                    "LoadBalancer",
+                    "app/testALB/12346566"
+                ]
+            ],
+            "region": "ap-northeast-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 808,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/ApplicationELB",
+                    "HTTPCode_ELB_502_Count",
+                    "LoadBalancer",
+                    "app/testALB/12346566"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "period": 60,
+            "stat": "Sum"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 814,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/ApplicationELB",
+                    "HTTPCode_ELB_504_Count",
+                    "LoadBalancer",
+                    "app/testALB/12346566"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "period": 60,
+            "stat": "Sum"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 814,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/ApplicationELB",
+                    "HTTPCode_ELB_503_Count",
+                    "LoadBalancer",
+                    "app/testALB/12346566"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "period": 60,
+            "stat": "Sum"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 820,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/ApplicationELB",
+                    "UnHealthyHostCount",
+                    "TargetGroup",
+                    "targetgroup/http/445566",
+                    "LoadBalancer",
+                    "app/testALB/12346566"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "stat": "Average",
+            "period": 60
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 820,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/ApplicationELB",
+                    "HealthyHostCount",
+                    "TargetGroup",
+                    "targetgroup/http/445566",
+                    "LoadBalancer",
+                    "app/testALB/12346566"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "stat": "Average",
+            "period": 60
+        }
+    }
+]

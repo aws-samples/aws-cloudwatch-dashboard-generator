@@ -1,0 +1,81 @@
+[
+    {
+        "type": "text",
+        "x": 0,
+        "y": 600,
+        "width": 18,
+        "height": 2,
+        "properties": {
+            "markdown": "\n# CloudFront\n"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 602,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/CloudFront",
+                    "Requests",
+                    "Region",
+                    "Global",
+                    "DistributionId",
+                    "E2GIQYUCABCDE"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "stat": "Sum",
+            "period": 300
+        }
+    },
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 602,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/CloudFront",
+                    "5xxErrorRate",
+                    "Region",
+                    "Global",
+                    "DistributionId",
+                    "E2GIQYUCABCDE"
+                ]
+            ],
+            "region": "us-east-1",
+            "period": 300
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 608,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/CloudFront",
+                    "4xxErrorRate",
+                    "Region",
+                    "Global",
+                    "DistributionId",
+                    "E2GIQYUCABCDE"
+                ]
+            ],
+            "region": "us-east-1"
+        }
+    }
+]

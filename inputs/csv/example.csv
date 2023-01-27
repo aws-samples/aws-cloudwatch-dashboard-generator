@@ -1,0 +1,13 @@
+service,region_code,dim1_name,dim1_value,dim2_name,dim2_value
+ALB,ap-northeast-1,LoadBalancer,app/my-alb1/1234567890123456
+ALB,ap-northeast-1,LoadBalancer,app/my-alb2/1234567890123456,TargetGroup,targetgroup/my-targets/1234567890123456
+CLB,ap-northeast-1,LoadBalancer,myCLB
+NLB,ap-northeast-1,LoadBalancer,net/my-nlb1/1234567890123456
+NLB,ap-northeast-1,LoadBalancer,net/my-nlb2/1234567890123456,TargetGroup,targetgroup/my-targets/1234567890123456
+NAT,ap-northeast-1,NatGatewayId,nat-0abcdef1234567890
+CloudFront,us-east-1,DistributionId,EDFDVBD6EXAMPLE
+EC2,ap-northeast-1,InstanceId,i-0abcdef1234567890
+RDS,ap-northeast-1,DBInstanceIdentifier,support-instance-1
+ElastiCache,ap-northeast-1,CacheClusterId,support-001,CacheNodeId,0001
+AuroraCluster,ap-northeast-1,DBClusterIdentifier,cluster-001
+AuroraInstance,ap-northeast-1,DBInstanceIdentifier,instance-001

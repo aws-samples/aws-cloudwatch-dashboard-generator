@@ -1,0 +1,186 @@
+[
+    {
+        "type": "text",
+        "x": 0,
+        "y": 940,
+        "width": 18,
+        "height": 2,
+        "properties": {
+            "markdown": "\n# Network Load Balancer\n"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 948,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/NetworkELB",
+                    "NewFlowCount",
+                    "LoadBalancer",
+                    "net/testNLB/d3ccb12345678982"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "stat": "Sum",
+            "period": 300
+        }
+    },
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 948,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/NetworkELB",
+                    "ActiveFlowCount",
+                    "LoadBalancer",
+                    "net/testNLB/d3ccb12345678982"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "period": 300,
+            "stat": "Sum"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 954,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/NetworkELB",
+                    "ProcessedBytes",
+                    "LoadBalancer",
+                    "net/testNLB/d3ccb12345678982"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "stat": "Sum",
+            "period": 300
+        }
+    },
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 954,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/NetworkELB",
+                    "TCP_ELB_Reset_Count",
+                    "LoadBalancer",
+                    "net/testNLB/d3ccb12345678982"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-northeast-1",
+            "stat": "Sum",
+            "period": 300
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 942,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/NetworkELB",
+                    "HealthyHostCount",
+                    "TargetGroup",
+                    "targetgroup/testNLBnginx2/24a9ab8234567889",
+                    "LoadBalancer",
+                    "net/testNLB/d3ccb12345678982"
+                ]
+            ],
+            "region": "ap-northeast-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 942,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/NetworkELB",
+                    "UnHealthyHostCount",
+                    "TargetGroup",
+                    "targetgroup/testNLBnginx2/24a9ab8234567889",
+                    "LoadBalancer",
+                    "net/testNLB/d3ccb12345678982"
+                ]
+            ],
+            "region": "ap-northeast-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 960,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "stat": "Maximum",
+            "metrics": [
+                [
+                    "AWS/NetworkELB",
+                    "PeakPacketsPerSecond",
+                    "LoadBalancer",
+                    "net/testNLB/d3ccb12345678982"
+                ]
+            ],
+            "region": "ap-northeast-1"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 960,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "stat": "Maximum",
+            "metrics": [
+                [
+                    "AWS/NetworkELB",
+                    "PeakBytesPerSecond",
+                    "LoadBalancer",
+                    "net/testNLB/d3ccb12345678982"
+                ]
+            ],
+            "region": "ap-northeast-1"
+        }
+    }
+]

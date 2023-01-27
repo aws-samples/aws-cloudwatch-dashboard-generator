@@ -1,0 +1,234 @@
+[
+    {
+        "type": "metric",
+        "x": 12,
+        "y": 452,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "EngineUptime",
+                    "DBInstanceIdentifier",
+                    "auro2071-instance-1"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 18,
+        "y": 452,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "RollbackSegmentHistoryListLength",
+                    "DBInstanceIdentifier",
+                    "auro2071-instance-1"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 452,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "FreeableMemory",
+                    "DBInstanceIdentifier",
+                    "auro2071-instance-1"
+                ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "ap-southeast-2",
+            "period": 300,
+            "stat": "Average"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 6,
+        "y": 452,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "FreeLocalStorage",
+                    "DBInstanceIdentifier",
+                    "auro2071-instance-1"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 12,
+        "y": 458,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "DMLLatency",
+                    "DBInstanceIdentifier",
+                    "auro2071-instance-1"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 18,
+        "y": 458,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "DMLThroughput",
+                    "DBInstanceIdentifier",
+                    "auro2071-instance-1"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 458,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "DDLThroughput",
+                    "DBInstanceIdentifier",
+                    "auro2071-instance-1"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 6,
+        "y": 458,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "Deadlocks",
+                    "DBInstanceIdentifier",
+                    "auro2071-instance-1"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 6,
+        "y": 464,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "CommitLatency",
+                    "DBInstanceIdentifier",
+                    "auro2071-instance-1"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 12,
+        "y": 464,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "ResultSetCacheHitRatio",
+                    "DBInstanceIdentifier",
+                    "auro2071-instance-1"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 464,
+        "width": 6,
+        "height": 6,
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [
+                    "AWS/RDS",
+                    "RowLockTime",
+                    "DBInstanceIdentifier",
+                    "auro2071-instance-1"
+                ]
+            ],
+            "region": "ap-southeast-2"
+        }
+    },
+    {
+        "type": "text",
+        "x": 0,
+        "y": 450,
+        "width": 24,
+        "height": 2,
+        "properties": {
+            "markdown": "\n# RDS Aurora MySQL Instances\n"
+        }
+    }
+]
