@@ -1,13 +1,8 @@
-# AWS CloudWatch Dashboard Generator For Infrastructure Event Management
+# AWS CloudWatch Dashboard Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT--0-yellow)](https://opensource.org/licenses/MIT-0)
 [![AWS Provider](https://img.shields.io/badge/provider-AWS-orange?logo=amazon-aws&color=ff9900)](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
 
-The purpose of this Python based command line tool is to generate a [CloudWatch Dashboard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html) for monitoring AWS resources during [IEM (AWS Infrastructure Event Management)](https://aws.amazon.com/premiumsupport/programs/iem/). The generated CloudWatch dashboard is based on the resources you provide and contains predefined useful CloudWatch metrics selected by AWS Support engineers for IEM scenarios.
-
-## What is AWS Infrastructure Event Management?
-> AWS Infrastructure Event Management (IEM) offers architecture and scaling guidance and operational support during the preparation and execution of planned events, such as shopping holidays, product launches, and migrations. For these events, AWS Infrastructure Event Management will help you assess operational readiness, identify and mitigate risks, and execute your event confidently with AWS experts by your side. The program is included in the Enterprise Support plan and is available to Business Support customers for an additional fee.
-
-For more information about Infrastructure Event Management, please visit the [official IEM website](https://aws.amazon.com/premiumsupport/programs/iem/).
+The purpose of this Python based command line tool is to generate a [CloudWatch Dashboard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html) which is based on a list of resources you provide and contains predefined useful CloudWatch metrics selected by AWS Support engineers for monitoring AWS resources during special events or [IEM (AWS Infrastructure Event Management)](https://aws.amazon.com/premiumsupport/programs/iem/) scenarios.
 
 ## Currently Supported AWS Resource Types
 | Resource Types            | Supported?       |
