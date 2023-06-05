@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT-0
 
 import utils, get_filepath
-from resource import Resource
+from aws_resource import Resource
 
 TEMPLATE_DIR_PATH = get_filepath.ROOT_DIR + "/templates/"
 

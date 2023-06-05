@@ -2,11 +2,12 @@
 # SPDX-License-Identifier: MIT-0
 
 from abc import ABC, abstractmethod
+from itertools import filterfalse
 
 
 class Resource(ABC):
     def __init__(self, input_file: dict):
-        self.template = dict()
+        self.template = list()
         self.input_file: dict = input_file
         self.is_elbv2 = False
         self.is_cf = False
@@ -64,6 +65,12 @@ class Resource(ABC):
                         widgets["properties"]["region"] = region
 
                         # widgets["properties"]["title"] += " ({})".format(region)
+
+        # we have to iterate the filled template again to check for empty metrics, and remove widgets if metrics are empty.
+        for widgets in self.template[:]:
+            if widgets["type"] == "metric":
+                if len(widgets["properties"]["metrics"]) == 0:
+                    self.template.remove(widgets)
 
     # ALB/NLB has different dimensions between different metrics
     def _get_lb_metric(self, metric_attr: list, resource: dict, region: str) -> list:
