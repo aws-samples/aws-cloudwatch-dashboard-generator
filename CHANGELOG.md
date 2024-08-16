@@ -10,9 +10,9 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [1.4.0] - 2024-08-16
 
-- N/A
+- Added support for Amazon S3, Amazon MSK and Amazon MQ.
 
 ## [1.3.0] - 2023-10-06
 
