@@ -24,6 +24,9 @@ class Dashboard:
             "NAT": False,
             "AuroraCluster": False,
             "AuroraInstance": False,
+            "AmazonMQ": False,
+            "AmazonMSK": False,
+            "S3": False,
         }
 
         for key in self.flags.keys():
@@ -60,3 +63,9 @@ class Dashboard:
                     self.resources.append(resources.AuroraCluster(self.input_file))
                 elif key == "AuroraInstance":
                     self.resources.append(resources.AuroraInstance(self.input_file))
+                elif key == "AmazonMQ":
+                    self.resources.append(resources.Mq(self.input_file))
+                elif key == "AmazonMSK":
+                    self.resources.append(resources.Msk(self.input_file))
+                elif key == "S3":
+                    self.resources.append(resources.S3(self.input_file))

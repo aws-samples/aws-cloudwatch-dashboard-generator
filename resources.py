@@ -16,6 +16,9 @@ RDS_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "RDS.json"
 AURORA_CLUSTER_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "AuroraCluster.json"
 AURORA_INSTANCE_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "AuroraInstance.json"
 NAT_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "NAT.json"
+MQ_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "MQ.json"
+MSK_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "MSK.json"
+S3_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "S3.json"
 
 class Alb(Resource):
     def __init__(self, input_file: dict):
@@ -131,4 +134,35 @@ class Nat(Resource):
     def write_template(self) -> dict:
         self._read_template()
         self._data_processing("NAT", "NatGatewayId")
+        return self.template
+
+class Mq(Resource):
+    def _read_template(self):
+        self.template = utils.json_to_dict(MQ_TEMPLATE_PATH)
+
+    def write_template(self) -> dict:
+        self._read_template()
+        self._data_processing("AmazonMQ", "Broker")
+        return self.template
+    
+class Msk(Resource):
+    def _read_template(self):
+        self.template = utils.json_to_dict(MSK_TEMPLATE_PATH)
+
+    def write_template(self) -> dict:
+        self._read_template()
+        self._data_processing("AmazonMSK", "Cluster Name")
+        return self.template
+
+class S3(Resource):
+    def __init__(self, input_file: dict):
+        super().__init__(input_file)
+        self.is_s3 = True
+
+    def _read_template(self):
+        self.template = utils.json_to_dict(S3_TEMPLATE_PATH)
+
+    def write_template(self) -> dict:
+        self._read_template()
+        self._data_processing("S3", "BucketName")
         return self.template

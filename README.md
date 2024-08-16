@@ -5,18 +5,20 @@
 The purpose of this Python based command line tool is to generate a [CloudWatch Dashboard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html) which is based on a list of resources you provide and contains predefined useful CloudWatch metrics selected by AWS Support engineers for monitoring AWS resources during special events or [IEM (AWS Infrastructure Event Management)](https://aws.amazon.com/premiumsupport/programs/iem/) scenarios.
 
 ## Currently Supported AWS Resource Types
-| Resource Types            | Supported?  |
-| ------------------------- | ----------- |
-| Application Load Balancer | ✅           |
-| Classic Load Balancer     | ✅           |
-| CloudFront                | ✅           |
-| EC2                       | ✅           |
-| ElastiCache               | ✅           |
-| Network Load Balancer     | ✅           |
-| RDS                       | ✅           |
-| NAT Gateway               | ✅           |
-| Aurora                    | ✅           |
-| S3                        | Coming soon |
+| Resource Types            | Supported? |
+| ------------------------- | ---------- |
+| Application Load Balancer | ✅          |
+| Classic Load Balancer     | ✅          |
+| CloudFront                | ✅          |
+| EC2                       | ✅          |
+| ElastiCache               | ✅          |
+| Network Load Balancer     | ✅          |
+| RDS                       | ✅          |
+| NAT Gateway               | ✅          |
+| Aurora                    | ✅          |
+| AmazonMQ(RabbitMQ)        | ✅          |
+| Amazon MSK                | ✅          |
+| S3                        | ✅          |
 
 
 ## Installation
@@ -94,6 +96,9 @@ You may create a CSV file matching the columns and format above, or fill in `inp
 | AuroraCluster  | ap-northeast-1 | DBClusterIdentifier  | cluster-001                  |             |            |
 | AuroraInstance | ap-northeast-1 | DBInstanceIdentifier | instance-001                 |             |            |
 | ElastiCache    | ap-northeast-1 | CacheClusterId       | support-001                  | CacheNodeId | 0001       |
+| AmazonMQ       | ap-northeast-1 | Broker               | broker-001                   |             |            |
+| AmazonMSK      | ap-northeast-1 | Cluster Name         | mskcluster-001               |             |            |
+| S3             | ap-northeast-1 | BucketName           | examplebucket                |             |            |
 
 Example:
 ```bash
@@ -114,15 +119,18 @@ You may also follow the below documentation to create the CloudWatch dashboard u
 ### Attribute explanation:
 
 `service` should be one of the following:
-- ALB
-- CLB
-- CloudFront
-- EC2
-- ElastiCache
-- NLB
-- RDS
-- NAT
-- AuroraCluster
+- `ALB`
+- `NLB`
+- `NAT` --> i.e. NAT gateway in VPC
+- `CloudFront`
+- `EC2`
+- `RDS`
+- `AuroraCluster`
+- `AuroraInstance`
+- `ElastiCache`
+- `AmazonMQ`
+- `AmazonMSK`
+- `S3`
 
 `region_code` is the AWS region where your resource is located at. See [definitions/Regions.json](definitions/Regions.json) for a list of region code.
 
