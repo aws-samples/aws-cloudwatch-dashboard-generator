@@ -157,12 +157,18 @@ class Msk(Resource):
 class S3(Resource):
     def __init__(self, input_file: dict):
         super().__init__(input_file)
+        self.S3_Y_AXIS = 1600 # https://quip-amazon.com/OtgHAamF64Ab/Event-Monitoring-Generator-for-IEM#CcI9CABLhc5
         self.is_s3 = True
 
     def _read_template(self):
         self.template = utils.json_to_dict(S3_TEMPLATE_PATH)
 
+    def _s3_template_preprocessing(self) -> None:
+        for widgets in self.template:
+            widgets['y'] += self.S3_Y_AXIS
+
     def write_template(self) -> dict:
         self._read_template()
+        self._s3_template_preprocessing()
         self._data_processing("S3", "BucketName")
         return self.template

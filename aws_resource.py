@@ -73,7 +73,7 @@ class Resource(ABC):
         # we have to iterate the filled template again to check for empty metrics, and remove widgets if metrics are empty.
         for widgets in self.template[:]:
             if widgets["type"] == "metric":
-                if len(widgets["properties"]["metrics"]) == 0:
+                if not widgets["properties"]["metrics"]:
                     self.template.remove(widgets)
 
     # ALB/NLB has different dimensions between different metrics
