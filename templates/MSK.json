@@ -1,0 +1,145 @@
+[
+        {
+            "height": 2,
+            "width": 18,
+            "y": 1500,
+            "x": 0,
+            "type": "text",
+            "properties": {
+                "markdown": "# Amazon MSK\n"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1502,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/Kafka", "GlobalPartitionCount", "Cluster Name", "demo-cluster-1" ]
+                ],
+                "region": "ap-northeast-1",
+                "liveData": true,
+                "period": 60,
+                "title": "GlobalPartitionCount",
+                "view": "timeSeries",
+                "stacked": false,
+                "stat": "Sum"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1502,
+            "x": 6,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/Kafka", "GlobalTopicCount", "Cluster Name", "demo-cluster-1" ]
+                ],
+                "region": "ap-northeast-1",
+                "liveData": true,
+                "period": 60,
+                "title": "GlobalTopicCount",
+                "view": "timeSeries",
+                "stacked": false,
+                "stat": "Sum"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1508,
+            "x": 6,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/Kafka", "ZooKeeperSessionState", "Cluster Name", "demo-cluster-1" ]
+                ],
+                "region": "ap-northeast-1",
+                "liveData": true,
+                "period": 60,
+                "title": "ZooKeeperSessionState",
+                "view": "timeSeries",
+                "stacked": false,
+                "stat": "Average"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1508,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/Kafka", "KafkaDataLogsDiskUsed", "Cluster Name", "demo-cluster-1" ]
+                ],
+                "region": "ap-northeast-1",
+                "liveData": true,
+                "period": 60,
+                "title": "KafkaDataLogsDiskUsed",
+                "view": "timeSeries",
+                "stacked": false,
+                "stat": "Average"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1502,
+            "x": 12,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/Kafka", "ClientConnectionCount", "Cluster Name", "demo-cluster-1", { "region": "ap-northeast-1" } ]
+                ],
+                "region": "ap-northeast-1",
+                "liveData": true,
+                "period": 60,
+                "title": "ClientConnectionCount",
+                "view": "timeSeries",
+                "stacked": false,
+                "stat": "Sum"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1508,
+            "x": 12,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/Kafka", "ZooKeeperRequestLatencyMsMean", "Cluster Name", "demo-cluster-1" ]
+                ],
+                "region": "ap-northeast-1",
+                "liveData": true,
+                "period": 300,
+                "title": "ZooKeeperRequestLatencyMsMean",
+                "view": "timeSeries",
+                "stacked": false,
+                "stat": "Average"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1514,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "region": "ap-northeast-1",
+                "liveData": true,
+                "period": 300,
+                "title": "OfflinePartitionsCount",
+                "view": "timeSeries",
+                "stacked": false,
+                "stat": "Average",
+                "metrics": [
+                    [ "AWS/Kafka", "OfflinePartitionsCount", "Cluster Name", "demo-cluster-1" ]
+                ]
+            }
+        }
+    ]

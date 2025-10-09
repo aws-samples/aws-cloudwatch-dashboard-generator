@@ -1,0 +1,201 @@
+[
+        {
+            "height": 2,
+            "width": 18,
+            "y": 1400,
+            "x": 0,
+            "type": "text",
+            "properties": {
+                "markdown": "# Amazon MQ (RabbitMQ) "
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1402,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/AmazonMQ", "SystemCpuUtilization", "Broker", "multiple" ],
+                    [ "...", "single" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-1",
+                "period": 60,
+                "stat": "Maximum",
+                "title": "SystemCpuUtilization"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1402,
+            "x": 6,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/AmazonMQ", "ConnectionCount", "Broker", "multiple", { "region": "ap-northeast-1" } ],
+                    [ "...", "single", { "region": "ap-northeast-1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-1",
+                "period": 60,
+                "stat": "Sum",
+                "title": "ConnectionCount"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1402,
+            "x": 12,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/AmazonMQ", "RabbitMQDiskFree", "Broker", "multiple" ],
+                    [ "...", "single" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-1",
+                "period": 60,
+                "stat": "Average",
+                "title": "RabbitMQDiskFree"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1408,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/AmazonMQ", "RabbitMQMemUsed", "Broker", "multiple" ],
+                    [ "...", "single" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-1",
+                "period": 60,
+                "stat": "Sum",
+                "title": "RabbitMQMemUsed"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1408,
+            "x": 6,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/AmazonMQ", "RabbitMQMemLimit", "Broker", "multiple" ],
+                    [ "...", "single" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-1",
+                "period": 300,
+                "stat": "Average",
+                "title": "RabbitMQMemLimit"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1408,
+            "x": 12,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/AmazonMQ", "MessageUnacknowledgedCount", "Broker", "multiple" ],
+                    [ "...", "single" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-1",
+                "period": 300,
+                "stat": "Sum",
+                "title": "MessageUnacknowledgedCount"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1414,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/AmazonMQ", "MessageCount", "Broker", "multiple" ],
+                    [ "...", "single" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-1",
+                "period": 300,
+                "stat": "Sum",
+                "title": "MessageCount"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1414,
+            "x": 6,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/AmazonMQ", "ConfirmRate", "Broker", "multiple", { "region": "ap-northeast-1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-1",
+                "period": 60,
+                "stat": "Average",
+                "title": "ConfirmRate"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1414,
+            "x": 12,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/AmazonMQ", "PublishRate", "Broker", "multiple", { "region": "ap-northeast-1" } ],
+                    [ "...", "single", { "region": "ap-northeast-1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-1",
+                "period": 60,
+                "stat": "Average",
+                "title": "PublishRate"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 1420,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/AmazonMQ", "AckRate", "Broker", "multiple" ],
+                    [ "...", "single" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-1",
+                "period": 60,
+                "stat": "Average",
+                "title": "AckRate"
+            }
+        }
+    ]
