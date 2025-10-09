@@ -1,0 +1,227 @@
+[
+    {
+        "height": 6,
+        "width": 6,
+        "y": 0,
+        "x": 0,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [ "AWS/S3", "4xxErrors", "BucketName", "examplebucket", "FilterId", "examplebucket", { "region": "us-west-2" } ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 300,
+            "stat": "Sum"
+        }
+    },
+    {
+        "height": 6,
+        "width": 6,
+        "y": 0,
+        "x": 6,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [ "AWS/S3", "5xxErrors", "BucketName", "examplebucket", "FilterId", "examplebucket", { "region": "us-west-2" } ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 300,
+            "stat": "Sum"
+        }
+    },
+    {
+        "height": 6,
+        "width": 6,
+        "y": 0,
+        "x": 12,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [ "AWS/S3", "AllRequests", "BucketName", "examplebucket", "FilterId", "examplebucket", { "region": "us-west-2" } ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 300,
+            "stat": "Sum"
+        }
+    },
+    {
+        "height": 6,
+        "width": 6,
+        "y": 0,
+        "x": 18,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [ "AWS/S3", "ListRequests", "BucketName", "examplebucket", "FilterId", "examplebucket", { "region": "us-west-2" } ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 300,
+            "stat": "Sum"
+        }
+    },
+    {
+        "height": 6,
+        "width": 6,
+        "y": 6,
+        "x": 0,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [ "AWS/S3", "PutRequests", "BucketName", "examplebucket", "FilterId", "examplebucket", { "region": "us-west-2" } ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 300,
+            "stat": "Average"
+        }
+    },
+    {
+        "height": 6,
+        "width": 6,
+        "y": 6,
+        "x": 6,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [ "AWS/S3", "HeadRequests", "BucketName", "examplebucket", "FilterId", "examplebucket" ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "stat": "Sum",
+            "period": 300
+        }
+    },
+    {
+        "height": 6,
+        "width": 6,
+        "y": 6,
+        "x": 12,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [ "AWS/S3", "DeleteRequests", "BucketName", "examplebucket", "FilterId", "storage_capacity", { "region": "us-west-2" } ]
+
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 300,
+            "stat": "Sum"
+        }
+    },
+    {
+        "height": 6,
+        "width": 6,
+        "y": 6,
+        "x": 18,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [ "AWS/S3", "HeadRequests", "BucketName", "examplebucket", "FilterId", "examplebucket", { "region": "us-west-2" } ]
+
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 300,
+            "stat": "Sum"
+        }
+    },
+    {
+        "height": 6,
+        "width": 6,
+        "y": 18,
+        "x": 0,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [ "AWS/S3", "BytesUploaded", "BucketName", "examplebucket", "FilterId", "examplebucket" ]
+
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "stat": "Sum",
+            "period": 300
+        }
+    },
+    {
+        "height": 6,
+        "width": 6,
+        "y": 12,
+        "x": 6,
+        "type": "metric",
+        "properties": {
+            "metrics": [
+                [ "AWS/S3", "BytesDownloaded", "BucketName", "examplebucket", "FilterId", "examplebucket" ]
+
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "stat": "Sum",
+            "period": 300
+        }
+    },
+    {
+        "height": 6,
+        "width": 6,
+        "y": 12,
+        "x": 12,
+        "type": "metric",
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [ "AWS/S3", "FirstByteLatency", "BucketName", "examplebucket", "FilterId", "examplebucket", { "region": "us-west-2" } ]
+
+            ],
+            "region": "us-east-1",
+            "period": 300
+        }
+    },
+    {
+        "height": 6,
+        "width": 6,
+        "y": 12,
+        "x": 18,
+        "type": "metric",
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [ "AWS/S3", "TotalRequestLatency", "BucketName", "examplebucket", "FilterId", "examplebucket", { "region": "us-west-2" } ]
+
+            ],
+            "region": "us-east-1",
+            "period": 300
+        }
+    },
+    {
+        "height": 6,
+        "width": 6,
+        "y": 12,
+        "x": 0,
+        "type": "metric",
+        "properties": {
+            "view": "timeSeries",
+            "stacked": false,
+            "metrics": [
+                [ "AWS/S3", "PostRequests", "BucketName", "examplebucket", "FilterId", "examplebucket", { "region": "us-west-2" } ]
+
+            ],
+            "region": "us-east-1",
+            "period": 300
+        }
+    }
+]
