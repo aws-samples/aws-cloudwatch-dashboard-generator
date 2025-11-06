@@ -77,28 +77,28 @@ The tool is quite simple. It reads a CSV file to get your resource IDs, then out
 
 There is an example CSV file at `inputs/csv/example.csv` under this package for your reference. The table in CSV file must follow the format as below:
 
-| service                | region_code   | dim1_name        | dim1_value        | dim2_name        | dim2_value        |
-| ---------------------- | ------------- | ---------------- | ----------------- | ---------------- | ----------------- |
-| *CloudWatch Namespace* | *region code* | *DimensionName1* | *DimensionValue1* | *DimensionName2* | *DimensionValue2* |
+| service                | account_id     | region_code   | dim1_name        | dim1_value        | dim2_name        | dim2_value        |
+| ---------------------- | -------------- | ------------- | ---------------- | ----------------- | ---------------- | ----------------- |
+| *CloudWatch Namespace* |  *account id*  | *region code* | *DimensionName1* | *DimensionValue1* | *DimensionName2* | *DimensionValue2* |
 
 For the explanation of these attributes, see [below](#attribute-explaination) for more.
 
 You may create a CSV file matching the columns and format above, or fill in `inputs/csv/fill-in.csv` with the resources you want to monitor on the dashboard. The order of entries(rows) in this table does not matter. The below is an example for the CSV input file, or refer to `inputs/csv/example.csv` in this repository. Though most of the service only requires one metric (`dim1_name` and `dim1_value` columns), please note that some services, including Elasticache, contain a second dimension entry `dim2_name` and `dim2_value`.
 
-| service        | region_code    | dim1_name            | dim1_value                   | dim2_name   | dim2_value |
-| -------------- | -------------- | -------------------- | ---------------------------- | ----------- | ---------- |
-| ALB            | ap-northeast-1 | LoadBalancer         | app/my-alb1/1234567890123456 |             |            |
-| NLB            | ap-northeast-1 | LoadBalancer         | net/my-nlb1/1234567890123456 |             |            |
-| NAT            | ap-northeast-1 | NatGatewayId         | nat-0abcdef1234567890        |             |            |
-| CloudFront     | us-east-1      | DistributionId       | EDFDVBD6EXAMPLE              |             |            |
-| EC2            | ap-northeast-1 | InstanceId           | i-0abcdef1234567890          |             |            |
-| RDS            | ap-northeast-1 | DBInstanceIdentifier | support-instance-1           |             |            |
-| AuroraCluster  | ap-northeast-1 | DBClusterIdentifier  | cluster-001                  |             |            |
-| AuroraInstance | ap-northeast-1 | DBInstanceIdentifier | instance-001                 |             |            |
-| ElastiCache    | ap-northeast-1 | CacheClusterId       | support-001                  | CacheNodeId | 0001       |
-| AmazonMQ       | ap-northeast-1 | Broker               | broker-001                   |             |            |
-| AmazonMSK      | ap-northeast-1 | Cluster Name         | mskcluster-001               |             |            |
-| S3             | ap-northeast-1 | BucketName           | examplebucket                |             |            |
+| service        | account_id   | region_code    | dim1_name            | dim1_value                   | dim2_name   | dim2_value |
+| -------------- | ------------ | -------------- | -------------------- | ---------------------------- | ----------- | ---------- |
+| ALB            | 123456789012 | ap-northeast-1 | LoadBalancer         | app/my-alb1/1234567890123456 |             |            |
+| NLB            | 123456789012 | ap-northeast-1 | LoadBalancer         | net/my-nlb1/1234567890123456 |             |            |
+| NAT            | 123456789012 | ap-northeast-1 | NatGatewayId         | nat-0abcdef1234567890        |             |            |
+| CloudFront     | 123456789012 | us-east-1      | DistributionId       | EDFDVBD6EXAMPLE              |             |            |
+| EC2            | 123456789012 | ap-northeast-1 | InstanceId           | i-0abcdef1234567890          |             |            |
+| RDS            | 123456789012 | ap-northeast-1 | DBInstanceIdentifier | support-instance-1           |             |            |
+| AuroraCluster  | 123456789012 | ap-northeast-1 | DBClusterIdentifier  | cluster-001                  |             |            |
+| AuroraInstance | 123456789012 | ap-northeast-1 | DBInstanceIdentifier | instance-001                 |             |            |
+| ElastiCache    | 123456789012 | ap-northeast-1 | CacheClusterId       | support-001                  | CacheNodeId | 0001       |
+| AmazonMQ       | 123456789012 | ap-northeast-1 | Broker               | broker-001                   |             |            |
+| AmazonMSK      | 123456789012 | ap-northeast-1 | Cluster Name         | mskcluster-001               |             |            |
+| S3             | 123456789012 | ap-northeast-1 | BucketName           | examplebucket                |             |            |
 
 Example:
 ```bash

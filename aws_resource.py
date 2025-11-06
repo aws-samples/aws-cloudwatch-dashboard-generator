@@ -30,6 +30,10 @@ class Resource(ABC):
                 resources = self.input_file[namespace]["Resources"]
                 for region in resources:
                     for resource in resources[region]:
+                        resource_context = {
+                            "region": region,
+                            **({"accountId": resource["account_id"]} if "account_id" in resource else {}),
+                        }
                         if self.is_elbv2:
                             if (
                                 metric[1] in ("UnHealthyHostCount", "HealthyHostCount")
@@ -38,19 +42,19 @@ class Resource(ABC):
                                 continue  # There is not target group in the input, skip it
                             else:
                                 new_widget_list = self._get_lb_metric(
-                                    metric, resource, region
+                                    metric, resource, resource_context
                                 )
                                 widgets["properties"]["metrics"] += new_widget_list
                         elif self.is_cf:
-                            new_widget = self._get_cf_metric(metric, resource)
+                            new_widget = self._get_cf_metric(metric, resource, resource_context)
                             widgets["properties"]["metrics"].append(new_widget)
                         elif self.is_elastic_cache:
                             new_widget = self._get_elastic_cache_metric(
-                                metric, resource, region
+                                metric, resource, resource_context
                             )
                             widgets["properties"]["metrics"].append(new_widget)
                         elif self.is_s3:
-                            new_widget = self._get_s3_metric(metric, resource, region)
+                            new_widget = self._get_s3_metric(metric, resource, resource_context)
                             widgets["properties"]["metrics"].append(new_widget)
                         else:
                             widgets["properties"]["metrics"].append(
@@ -59,7 +63,7 @@ class Resource(ABC):
                                     metric[1],  # MetricName
                                     metric[2],  # DimensionName
                                     resource[dimension_value],  # DimensionValue
-                                    {"region": region},
+                                    resource_context,
                                 ]
                             )
                         # We specify regions under the scope of a metric instead of a widget
@@ -77,7 +81,7 @@ class Resource(ABC):
                     self.template.remove(widgets)
 
     # ALB/NLB has different dimensions between different metrics
-    def _get_lb_metric(self, metric_attr: list, resource: dict, region: str) -> list:
+    def _get_lb_metric(self, metric_attr: list, resource: dict, resource_context: dict) -> list:
         if metric_attr[1] in ("UnHealthyHostCount", "HealthyHostCount"):
             TargetGroupList = []
             for tg in resource["TargetGroup"]:
@@ -89,7 +93,7 @@ class Resource(ABC):
                         tg,  # TargetGroup ID
                         metric_attr[4],  # LoadBalancer
                         resource["LoadBalancer"],  # LoadBalancer ID
-                        {"region": region},
+                        resource_context,
                     ]
                 )
             return TargetGroupList
@@ -100,7 +104,7 @@ class Resource(ABC):
                     metric_attr[1],  # MetricName
                     metric_attr[2],  # TargetGroup
                     resource["LoadBalancer"],  # TargetGroup ID,
-                    {"region": region},
+                    resource_context,
                 ]
             ]
         else:
@@ -110,12 +114,13 @@ class Resource(ABC):
                     metric_attr[1],  # MetricName
                     metric_attr[2],  # TargetGroup
                     resource["LoadBalancer"],  # LoadBalancer ID
-                    {"region": region},
+                    resource_context,
                 ]
             ]
 
     # CloudFront has multiple Dimensions
-    def _get_cf_metric(self, metric_attr: list, resource: dict) -> list:
+    def _get_cf_metric(self, metric_attr: list, resource: dict, resource_context: dict) -> list:
+        resource_context["region"] = "us-east-1" # CloudFront metric only has one region "us-east-1"
         return [
             metric_attr[0],  # Namespace
             metric_attr[1],  # MetricName
@@ -123,11 +128,11 @@ class Resource(ABC):
             metric_attr[3],  # DimensionValue1
             metric_attr[4],  # DimensionName2
             resource["DistributionId"],  # DimensionValue2
-            {"region": "us-east-1"}, # CloudFront metric only has one region "us-east-1"
+            resource_context,
         ]
 
     def _get_elastic_cache_metric(
-        self, metric_attr: list, resource: dict, region: str
+        self, metric_attr: list, resource: dict, resource_context: dict
     ) -> list:
         if metric_attr[1] in (
             "FreeableMemory",
@@ -140,7 +145,7 @@ class Resource(ABC):
                 metric_attr[1],  # MetricName
                 metric_attr[2],  # CacheClusterId
                 resource["CacheClusterId"],  # LoadBalancer ID
-                {"region": region},
+                resource_context,
             ]
         else:
             return [
@@ -150,10 +155,10 @@ class Resource(ABC):
                 resource["CacheClusterId"],  # DimensionValue1
                 metric_attr[4],  # DimensionName2
                 resource["CacheNodeId"][0],  # DimensionValue2
-                {"region": region},
+                resource_context,
             ]
 
-    def _get_s3_metric(self, metric_attr: list, resource: dict, region: str) -> list:
+    def _get_s3_metric(self, metric_attr: list, resource: dict, resource_context: dict) -> list:
         return [
             metric_attr[0],  # Namespace
             metric_attr[1],  # MetricName
@@ -161,5 +166,5 @@ class Resource(ABC):
             resource["BucketName"],  # DimensionValue
             metric_attr[4],  # DimensionName "FilterID"
             resource["BucketName"],  # DimensionValue, same as bucket name
-            {"region": region},
+            resource_context,
         ]

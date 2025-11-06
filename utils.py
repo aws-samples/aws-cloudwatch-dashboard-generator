@@ -14,6 +14,7 @@ from yaml import safe_load as yaml_safe_load
 
 import get_filepath
 
+ACCOUNT_ID = "account_id"
 FIRST_DIM_NAME = "dim1_name"
 FIRST_DIM_VALUE = "dim1_value"
 SECOND_DIM_NAME = "dim2_name"
@@ -80,6 +81,9 @@ def _csv_resources_to_dict(df: DataFrame) -> dict:
                 if not pd_isnull(resource[SECOND_DIM_NAME]):
                     # If the second dimension is not null, add it to the dict
                     res_dict.setdefault(resource[SECOND_DIM_NAME], []).extend([resource[SECOND_DIM_VALUE]])
+                if not pd_isnull(resource[ACCOUNT_ID]):
+                    # If account id is not null, add it to the dict
+                    res_dict[ACCOUNT_ID] = resource[ACCOUNT_ID]
                 input_file[service]["Resources"][region].append(res_dict)
 
     return input_file
