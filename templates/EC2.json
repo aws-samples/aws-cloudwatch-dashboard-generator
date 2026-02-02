@@ -3,7 +3,7 @@
             "type": "metric",
             "x": 0,
             "y": 2,
-            "width": 9,
+            "width": 6,
             "height": 6,
             "properties": {
                 "metrics": [
@@ -62,9 +62,9 @@
         },
         {
             "type": "metric",
-            "x": 9,
+            "x": 6,
             "y": 2,
-            "width": 9,
+            "width": 6,
             "height": 6,
             "properties": {
                 "metrics": [
@@ -137,6 +137,23 @@
             "properties": {
                 "metrics": [
                     [ "AWS/EC2", "NetworkIn", "InstanceId", "i-01222b81123345644" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "period": 300,
+                "stat": "Sum"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 2,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2", "StatusCheckFailed_AttachedEBS", "InstanceId", "i-01222b81123345644" ]
                 ],
                 "view": "timeSeries",
                 "stacked": false,
