@@ -651,7 +651,7 @@ ec2_output_1 = [
             "type": "metric",
             "x": 0,
             "y": 2,
-            "width": 9,
+            "width": 6,
             "height": 6,
             "properties": {
                 "metrics": [
@@ -719,9 +719,9 @@ ec2_output_1 = [
         },
         {
             "type": "metric",
-            "x": 9,
+            "x": 6,
             "y": 2,
-            "width": 9,
+            "width": 6,
             "height": 6,
             "properties": {
                 "metrics": [
@@ -815,6 +815,26 @@ ec2_output_1 = [
                 "region": "us-east-2",
                 "period": 300,
                 "stat": "Sum"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 2,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2", "StatusCheckFailed_AttachedEBS", "InstanceId", "i-0f8f8f8f8f8f8f8f8",{"region": "us-east-1"} ],
+                    [ "AWS/EC2", "StatusCheckFailed_AttachedEBS", "InstanceId", "i-9f9f9f9f9f9f9f9f9",{"region": "us-east-1"} ],
+                    [ "AWS/EC2", "StatusCheckFailed_AttachedEBS", "InstanceId", "i-0a0a0a0a0a0a0a0a0",{"region": "us-east-2"} ],
+                    [ "AWS/EC2", "StatusCheckFailed_AttachedEBS", "InstanceId", "i-0b0b0b0b0b0b0b0b0",{"region": "us-east-2"} ],
+                ],
+                "view": "timeSeries",
+                "stacked": False,
+                "region": "us-east-2",
+                "stat": "Sum",
+                "period": 300
             }
         }
 ]
