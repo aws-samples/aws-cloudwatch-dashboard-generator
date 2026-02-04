@@ -51,14 +51,47 @@
         "height": 6,
         "properties": {
             "metrics": [
-                [ "AWS/ECS", "CPUUtilization", "ClusterName", "my-cluster", "ServiceName", "my-service" ]
+                [ "ECS/ContainerInsights", "TaskEphemeralStorageUtilization", "ClusterName", "my-cluster", "ServiceName", "my-service" ]
             ],
             "view": "timeSeries",
             "stacked": false,
             "region": "us-east-1",
             "period": 60,
-            "stat": "SampleCount",
-            "title": "TaskCount"
+            "stat": "Average"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 8,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [ "ECS/ContainerInsights", "DesiredTaskCount", "ClusterName", "my-cluster", "ServiceName", "my-service" ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 60,
+            "stat": "Average"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 14,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [ "ECS/ContainerInsights", "RunningTaskCount", "ClusterName", "my-cluster", "ServiceName", "my-service" ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 60,
+            "stat": "Average"
         }
     }
 ]

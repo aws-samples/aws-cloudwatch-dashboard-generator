@@ -1085,7 +1085,7 @@ ecs_output_1 = [
         "height": 6,
         "properties": {
             "metrics": [
-                [ "AWS/ECS", "CPUUtilization", "ClusterName", "cluster-001", "ServiceName", "service-001", { "region": "ap-northeast-1" } ],
+                [ "AWS/ECS", "CPUUtilization", "ClusterName", "cluster-001", "ServiceName", "service-001", { "region": "ap-northeast-1" } ]
             ],
             "view": "timeSeries",
             "stacked": False,
@@ -1102,7 +1102,7 @@ ecs_output_1 = [
         "height": 6,
         "properties": {
             "metrics": [
-                [ "AWS/ECS", "MemoryUtilization", "ClusterName", "cluster-001", "ServiceName", "service-001", { "region": "ap-northeast-1" } ],
+                [ "AWS/ECS", "MemoryUtilization", "ClusterName", "cluster-001", "ServiceName", "service-001", { "region": "ap-northeast-1" } ]
             ],
             "view": "timeSeries",
             "stacked": False,
@@ -1119,14 +1119,47 @@ ecs_output_1 = [
         "height": 6,
         "properties": {
             "metrics": [
-                [ "AWS/ECS", "CPUUtilization", "ClusterName", "cluster-001", "ServiceName", "service-001", { "region": "ap-northeast-1" } ],
+                [ "ECS/ContainerInsights", "TaskEphemeralStorageUtilization", "ClusterName", "cluster-001", "ServiceName", "service-001", { "region": "ap-northeast-1" } ]
             ],
             "view": "timeSeries",
             "stacked": False,
             "region": "ap-northeast-1",
             "period": 60,
-            "stat": "SampleCount",
-            "title": "TaskCount"
+            "stat": "Average"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 1708,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [ "ECS/ContainerInsights", "DesiredTaskCount", "ClusterName", "cluster-001", "ServiceName", "service-001", { "region": "ap-northeast-1" } ]
+            ],
+            "view": "timeSeries",
+            "stacked": False,
+            "region": "ap-northeast-1",
+            "period": 60,
+            "stat": "Average"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 1714,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [ "ECS/ContainerInsights", "RunningTaskCount", "ClusterName", "cluster-001", "ServiceName", "service-001", { "region": "ap-northeast-1" } ]
+            ],
+            "view": "timeSeries",
+            "stacked": False,
+            "region": "ap-northeast-1",
+            "period": 60,
+            "stat": "Average"
         }
     }
 ]
