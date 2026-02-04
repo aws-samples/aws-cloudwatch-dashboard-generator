@@ -821,9 +821,19 @@ ec2_output_1 = [
 
 s3_output = [
     {
+        "height": 2,
+        "width": 24,
+        "y": 1600,
+        "x": 0,
+        "type": "text",
+        "properties": {
+            "markdown": "# Amazon S3\n"
+        }
+    },
+    {
         "height": 6,
         "width": 6,
-        "y": 1600,
+        "y": 1602,
         "x": 0,
         "type": "metric",
         "properties": {
@@ -842,7 +852,7 @@ s3_output = [
     {
         "height": 6,
         "width": 6,
-        "y": 1600,
+        "y": 1602,
         "x": 6,
         "type": "metric",
         "properties": {
@@ -861,7 +871,7 @@ s3_output = [
     {
         "height": 6,
         "width": 6,
-        "y": 1600,
+        "y": 1602,
         "x": 12,
         "type": "metric",
         "properties": {
@@ -880,7 +890,7 @@ s3_output = [
     {
         "height": 6,
         "width": 6,
-        "y": 1600,
+        "y": 1602,
         "x": 18,
         "type": "metric",
         "properties": {
@@ -899,7 +909,7 @@ s3_output = [
     {
         "height": 6,
         "width": 6,
-        "y": 1606,
+        "y": 1608,
         "x": 0,
         "type": "metric",
         "properties": {
@@ -918,7 +928,7 @@ s3_output = [
     {
         "height": 6,
         "width": 6,
-        "y": 1606,
+        "y": 1608,
         "x": 6,
         "type": "metric",
         "properties": {
@@ -937,7 +947,7 @@ s3_output = [
     {
         "height": 6,
         "width": 6,
-        "y": 1606,
+        "y": 1608,
         "x": 12,
         "type": "metric",
         "properties": {
@@ -956,7 +966,7 @@ s3_output = [
     {
         "height": 6,
         "width": 6,
-        "y": 1606,
+        "y": 1608,
         "x": 18,
         "type": "metric",
         "properties": {
@@ -975,7 +985,7 @@ s3_output = [
     {
         "height": 6,
         "width": 6,
-        "y": 1618,
+        "y": 1620,
         "x": 0,
         "type": "metric",
         "properties": {
@@ -994,7 +1004,7 @@ s3_output = [
     {
         "height": 6,
         "width": 6,
-        "y": 1612,
+        "y": 1614,
         "x": 6,
         "type": "metric",
         "properties": {
@@ -1013,7 +1023,7 @@ s3_output = [
     {
         "height": 6,
         "width": 6,
-        "y": 1612,
+        "y": 1614,
         "x": 12,
         "type": "metric",
         "properties": {
@@ -1031,7 +1041,7 @@ s3_output = [
     {
         "height": 6,
         "width": 6,
-        "y": 1612,
+        "y": 1614,
         "x": 18,
         "type": "metric",
         "properties": {
@@ -1049,7 +1059,7 @@ s3_output = [
     {
         "height": 6,
         "width": 6,
-        "y": 1612,
+        "y": 1614,
         "x": 0,
         "type": "metric",
         "properties": {
