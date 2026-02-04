@@ -73,3 +73,16 @@ class TestResources(unittest.TestCase):
         # assertDictEqual to see any difference between two dictionaries
         for i in range(len(s3.template)):
             self.assertDictEqual(s3.template[i], s3_output[i], msg="Template does not match")
+
+    def test_ecs(self):
+        ecs = Ecs(ecs_input_1)
+        ecs.template = utils.json_to_dict("templates/ECS.json")
+        ecs._data_processing(
+            "AWS/ECS", "ServiceName"
+        )
+        ecs._ecs_template_preprocessing()
+
+        self.assertEqual(len(ecs.template), len(ecs_output_1), msg="total number of CloudWatch widgets are different")
+        # assertDictEqual to see any difference between two dictionaries
+        for i in range(len(ecs.template)):
+            self.assertDictEqual(ecs.template[i], ecs_output_1[i], msg="Template does not match")

@@ -27,6 +27,7 @@ class Dashboard:
             "AmazonMQ": False,
             "AmazonMSK": False,
             "S3": False,
+            "ECS": False,
         }
 
         for key in self.flags.keys():
@@ -69,3 +70,5 @@ class Dashboard:
                     self.resources.append(resources.Msk(self.input_file))
                 elif key == "S3":
                     self.resources.append(resources.S3(self.input_file))
+                elif key == "ECS":
+                    self.resources.append(resources.Ecs(self.input_file))
