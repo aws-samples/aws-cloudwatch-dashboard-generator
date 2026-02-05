@@ -1,0 +1,97 @@
+[
+    {
+        "type": "text",
+        "x": 0,
+        "y": 0,
+        "width": 18,
+        "height": 2,
+        "properties": {
+            "markdown": "\n# Amazon ECS\n"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 2,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [ "AWS/ECS", "CPUUtilization", "ClusterName", "my-cluster", "ServiceName", "my-service" ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 60,
+            "stat": "Average"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 2,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [ "AWS/ECS", "MemoryUtilization", "ClusterName", "my-cluster", "ServiceName", "my-service" ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 60,
+            "stat": "Average"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 8,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [ "ECS/ContainerInsights", "TaskEphemeralStorageUtilization", "ClusterName", "my-cluster", "ServiceName", "my-service" ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 60,
+            "stat": "Average"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 9,
+        "y": 8,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [ "ECS/ContainerInsights", "DesiredTaskCount", "ClusterName", "my-cluster", "ServiceName", "my-service" ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 60,
+            "stat": "Average"
+        }
+    },
+    {
+        "type": "metric",
+        "x": 0,
+        "y": 14,
+        "width": 9,
+        "height": 6,
+        "properties": {
+            "metrics": [
+                [ "ECS/ContainerInsights", "RunningTaskCount", "ClusterName", "my-cluster", "ServiceName", "my-service" ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "us-east-1",
+            "period": 60,
+            "stat": "Average"
+        }
+    }
+]

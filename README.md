@@ -19,6 +19,7 @@ The purpose of this Python based command line tool is to generate a [CloudWatch 
 | AmazonMQ(RabbitMQ)        | ✅          |
 | Amazon MSK                | ✅          |
 | S3                        | ✅          |
+| ECS                       | ✅          |
 
 
 ## Installation
@@ -99,6 +100,7 @@ You may create a CSV file matching the columns and format above, or fill in `inp
 | AmazonMQ       | ap-northeast-1 | Broker               | broker-001                   |             |            |
 | AmazonMSK      | ap-northeast-1 | Cluster Name         | mskcluster-001               |             |            |
 | S3             | ap-northeast-1 | BucketName           | examplebucket                |             |            |
+| ECS            | ap-northeast-1 | ClusterName          | cluster-001                  | ServiceName | service-001 |
 
 Example:
 ```bash
@@ -131,6 +133,7 @@ You may also follow the below documentation to create the CloudWatch dashboard u
 - `AmazonMQ`
 - `AmazonMSK`
 - `S3`
+- `ECS`
 
 `region_code` is the AWS region where your resource is located at. See [definitions/Regions.json](definitions/Regions.json) for a list of region code.
 

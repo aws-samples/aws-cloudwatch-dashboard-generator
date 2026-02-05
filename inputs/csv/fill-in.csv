@@ -11,3 +11,4 @@ AuroraCluster,,,,,
 AmazonMQ,,,,,
 AmazonMSK,,,,,
 S3,,,,,
+ECS,ap-northeast-1,ClusterName,my-cluster,ServiceName,my-service

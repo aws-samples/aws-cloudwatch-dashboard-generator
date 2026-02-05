@@ -19,6 +19,7 @@ NAT_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "NAT.json"
 MQ_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "MQ.json"
 MSK_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "MSK.json"
 S3_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "S3.json"
+ECS_TEMPLATE_PATH = TEMPLATE_DIR_PATH + "ECS.json"
 
 class Alb(Resource):
     def __init__(self, input_file: dict):
@@ -171,4 +172,23 @@ class S3(Resource):
         self._read_template()
         self._s3_template_preprocessing()
         self._data_processing("S3", "BucketName")
+        return self.template
+
+class Ecs(Resource):
+    def __init__(self, input_file: dict):
+        super().__init__(input_file)
+        self.ECS_Y_AXIS = 1700
+        self.is_ecs = True
+
+    def _read_template(self):
+        self.template = utils.json_to_dict(ECS_TEMPLATE_PATH)
+
+    def _ecs_template_preprocessing(self) -> None:
+        for widgets in self.template:
+            widgets['y'] += self.ECS_Y_AXIS
+
+    def write_template(self) -> dict:
+        self._read_template()
+        self._ecs_template_preprocessing()
+        self._data_processing("ECS", "ServiceName")
         return self.template

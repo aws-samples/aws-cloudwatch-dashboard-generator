@@ -13,6 +13,7 @@ class Resource(ABC):
         self.is_cf = False
         self.is_elastic_cache = False
         self.is_s3 = False
+        self.is_ecs = False
 
     @abstractmethod
     def write_template(self) -> list:
@@ -51,6 +52,9 @@ class Resource(ABC):
                             widgets["properties"]["metrics"].append(new_widget)
                         elif self.is_s3:
                             new_widget = self._get_s3_metric(metric, resource, region)
+                            widgets["properties"]["metrics"].append(new_widget)
+                        elif self.is_ecs:
+                            new_widget = self._get_ecs_metric(metric, resource, region)
                             widgets["properties"]["metrics"].append(new_widget)
                         else:
                             widgets["properties"]["metrics"].append(
@@ -161,5 +165,16 @@ class Resource(ABC):
             resource["BucketName"],  # DimensionValue
             metric_attr[4],  # DimensionName "FilterID"
             resource["BucketName"],  # DimensionValue, same as bucket name
+            {"region": region},
+        ]
+
+    def _get_ecs_metric(self, metric_attr: list, resource: dict, region: str) -> list:
+        return [
+            metric_attr[0],  # Namespace
+            metric_attr[1],  # MetricName
+            metric_attr[2],  # ClusterName
+            resource["ClusterName"],  # ClusterName value
+            metric_attr[4],  # ServiceName
+            resource["ServiceName"][0],  # ServiceName value
             {"region": region},
         ]

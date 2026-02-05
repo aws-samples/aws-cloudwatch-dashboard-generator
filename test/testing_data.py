@@ -68,3 +68,17 @@ s3_input = {
         }
     }
 }
+
+ecs_input_1 = {
+    "AWS/ECS": {
+        "Resources": {
+            "ap-northeast-1": [
+                {
+                    "ClusterName": "cluster-001",
+                    "ServiceName": ["service-001"]
+                }
+            ]
+        }
+    }
+}
+
